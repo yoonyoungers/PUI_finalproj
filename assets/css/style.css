@@ -33,6 +33,31 @@ a:hover{
 
 
 /* Homepage styling*/
+
+    /* animation for homepage penguin*/
+.swimpenguin{
+    width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: swimpenguin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes swimpenguin {
+    0%{left:0px; top:0px;}
+    25%{left:1000px; top:0px; transform: rotateY(180deg)}
+    50%{left:1000px; top:400px;}
+    75%{left:0px; top:400px; transform: rotateY(180deg)}
+    100%{left:0px; top:0px;}
+}
+
+
+
+
+
 .egg{
     padding-top: 80px;
 
@@ -71,6 +96,25 @@ a:hover{
 
 /* introscroll page styling*/
 
+/*adding in penguin swimming animations to introscroll page*/
+.swimpenguin2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: swimpenguin2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes swimpenguin2 {
+    0%{left:-200px; top:0px;}
+    100%{left:1400px; top:400px;}
+}
+
+
+/*landscape image*/
 .coldland{
    margin-top: 70px; 
 }
@@ -213,6 +257,7 @@ a:hover{
 	background:#09f;
 	font-weight:bold;
 	padding:1em;
+	padding:1em;,
 }
 
 #download {
@@ -256,4 +301,22 @@ i{
 }
 
 
+/*styling for the modal body - to display different penguin species*/
+#modal-body{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.col-md-12{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+#continuebutton{
+    text-align: center;
+}
 
